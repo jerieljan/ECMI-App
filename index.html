@@ -1,12 +1,316 @@
-<html><head id="head">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html>
 
-  <title>#448219 - Pastie</title>
-	<link rel="icon" type="image/gif" href="http://pastie.org/images/pastie.gif">
-	<link rel="SHORTCUT ICON" type="image/gif" href="http://pastie.org/images/pastie.gif">
-</head><body>
+<head>
+	<title>Ethical Choices Mapping Instrument</title>
+
+	<link rel="stylesheet" type="text/css" href="general.css" />
+</head>
+
+<body>
+
+	<div id="content">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+
+
+function formCheck(formobj){
+	// name of mandatory fields
+
+	var fieldRequired = Array(
+"q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10", "q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20", "q21", "q22", "q23", "q24", "q25", "q26", "q27", "q28", "q29", "q30", "q31", "name");
+
+        // field description to appear in the dialog box
+	var fieldDescription = Array("question 1", "question 2", "question 3", "question 4", "question 5", "question 6", "question 7", "question 8", "question 9", "question 10", "question 11", "question 12", "question 13", "question 14", "question 15", "question 16", "question 17", "question 18", "question 19", "question 20", "question 21", "question 22", "question 23", "question 24", "question 25", "question 26", "question 27", "question 28", "question 29", "question 30", "question 31", "question 32", "Your Name");
+
+	// dialog message
+	var alertMsg = "Please complete the following fields:\n";
 	
-<pre>	&lt;div id="content"&gt;<br>&lt;script type="text/JavaScript" language="JavaScript"&gt;<br>&lt;!--<br><br><br>function formCheck(formobj){<br>	// name of mandatory fields<br><br>	var fieldRequired = Array(<br>"q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10", "q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20", "q21", "q22", "q23", "q24", "q25", "q26", "q27", "q28", "q29", "q30", "q31", "name");<br><br>        // field description to appear in the dialog box<br>	var fieldDescription = Array("question 1", "question 2", "question 3", "question 4", "question 5", "question 6", "question 7", "question 8", "question 9", "question 10", "question 11", "question 12", "question 13", "question 14", "question 15", "question 16", "question 17", "question 18", "question 19", "question 20", "question 21", "question 22", "question 23", "question 24", "question 25", "question 26", "question 27", "question 28", "question 29", "question 30", "question 31", "question 32", "Your Name");<br><br>	// dialog message<br>	var alertMsg = "Please complete the following fields:\n";<br>	<br>	var l_Msg = alertMsg.length;<br>	<br>	for (var i = 0; i &lt; fieldRequired.length; i++){<br>		var obj = formobj.elements[fieldRequired[i]];<br>		if (obj){<br>			if (obj.type == null){<br>				var blnchecked = false;<br>				for (var j = 0; j &lt; obj.length; j++){<br>					if (obj[j].checked){<br>						blnchecked = true;<br>					}<br>				}<br>				if (!blnchecked){<br>					alertMsg += " - " + fieldDescription[i] + "\n";<br>				}<br>				continue;<br>			}<br><br>			switch(obj.type){<br>			case "select-one":<br>				if (obj.selectedIndex == -1 || obj.options[obj.selectedIndex].text == ""){<br>					alertMsg += " - " + fieldDescription[i] + "\n";<br>				}<br>				break;<br>			case "select-multiple":<br>				if (obj.selectedIndex == -1){<br>					alertMsg += " - " + fieldDescription[i] + "\n";<br>				}<br>				break;<br>			case "text":<br>			case "textarea":<br>				if (obj.value == "" || obj.value == null){<br>					alertMsg += " - " + fieldDescription[i] + "\n";<br>				}<br>				break;<br>			default:<br>			}<br>		}<br>	}<br><br>	if (alertMsg.length == l_Msg){<br>		return true;<br>	}else{<br>		alert(alertMsg);<br>		return false;<br>	}<br>}<br>// --&gt;<br>&lt;/script&gt;<br>&lt;h1&gt;ETHICAL CHOICES MAPPING INSTRUMENT&lt;/h1&gt;<br>&lt;form name="formcheck" action="results.php" method="POST" onsubmit="return formCheck(this);"&gt;<br>&lt;p class="MsoNormal"&gt;&lt;b&gt;Select one of the following approaches which you are more likely to use:<br>&lt;/b&gt;&lt;h2&gt;Personal Ethics&lt;/h2&gt;<br>&lt;/p&gt;<br>1.&lt;/br&gt;<br>	&lt;input name="q1" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. When I have to make a tough decision, I usually figure out what to do by weighing the pros and cons, thinking about the alternatives, and decide based on what makes the most sense.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q1" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. When I have a major decision to make, I usually know what to do when the time is right, or I have a gut feeling about the best approach to take.&lt;/label&gt;&lt;/br&gt;<br>		&lt;/input&gt;<br>&lt;/br&gt;2.&lt;/br&gt;<br>	&lt;input name="q2" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. When I have to make a tough decision, I usually figure out what to do by weighing the pros and cons, thinking about the alternatives, and decide based on what makes the most sense.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q2" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. When I have a major decision to make, I usually know what to do when the time is right, or I have a gut feeling about the best approach to take.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;3.&lt;/br&gt;<br>	&lt;input name="q3" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. I usually prefer to follow the rules or go along with what others are doing in a particular situation.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q3" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. I tend to follow the rules if it makes sense to do so; but I think it makes sense to break rules or make new ones if the old ones aren't working, and I often do that.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;4.&lt;/br&gt;<br>	&lt;input name="q4" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. I tend to put the interests of other people first or do what is in the best interest of the most people.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q4" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. I tend to think about how something will benefit me first; I prefer to do what's best for me most of the time.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;5.&lt;/br&gt;<br>	&lt;input name="q5" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. When I chose the work I'm doing now, I spent some time thinking about I wanted to do, such as my skills, interests, financial considerations, my family's interests, and other factors.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q5" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. When I chose the work I'm doing now, I felt like this was something I was called to do -- or it just happened, because I drifted into it.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;6.&lt;/br&gt;<br>	&lt;input name="q6" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Keep my agreement even if I had a better job offer during this time.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q6" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Take the better job offer if it was better for me to do so.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;7.&lt;/br&gt;<br>	&lt;input name="q7" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Help my family overcome its problems first and then go after the career, move, or relationship I wanted.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q7" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Choose to go after the career, move, or relationship I want first, and then help my family.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;8.&lt;/br&gt;<br>	&lt;input name="q8" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. When I was growing up, I was generally well-behaved at home or one of the gang with my friends.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q8" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. When I was growing up, I was often the one who came up with new ideas or was something of a troublemaker or the one to rock the boat.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;&lt;h2&gt;Familiy Ethics&lt;/h2&gt;&lt;/br&gt;<br>&lt;/br&gt;9. When one is a child, I think in general:&lt;/br&gt;<br>	&lt;input name="q9" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. One should follow the guidelines and principles provided by one's parents or teachers.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q9" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. One should regard childhood as a period of self-discovery and learning, and follow the guidelines and principles that seem sensible, but otherwise feel free to make one's own choices.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;10. If I was a teenager who got into trouble for committing a petty crime, like joyriding or shoplifting, I would:&lt;/br&gt;<br>	&lt;input name="q10" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Confess, tell my parents I was sorry, take my punishment, and promise not to do it again.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q10" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Do what I can to avoid getting punished by the authorities or my parents, and be more careful in the future.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;11. When one is a parent, I think in general:&lt;/br&gt;<br>	&lt;input name="q11" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. One should put the needs of one's kids first in making choices, like where to move or whether to stay together with a mate for the sake of the child.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q11" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. One should set a good example for the kids and expect them to behave properly.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;12. As a parent with a teenager who misbehaves or gets into trouble, I would:&lt;/br&gt;<br>	&lt;input name="q12" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Talk about the importance of behaving properly or decide on an appropriate punishment if the problem continues or is serious enough.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q12" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Try to understand why the teenager is having problems from his or her point of view and show my support to help him or her overcome the problem.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;13. As a parent, I think in general:&lt;/br&gt;<br>	&lt;input name="q13" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. There are certain codes of behavior every child should know and follow, such as don't lie, cheat, or steal.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q13" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Each child is an individual, and it is important to help the child develop to his fullest potential.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;&lt;h2&gt;Ethics with Friends, Dates, and Distant Relatives &lt;/h2&gt;&lt;/br&gt;<br>&lt;/br&gt;14.&lt;/br&gt;<br>	&lt;input name="q14" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. In choosing my friends, it's important that a friend shares certain core values or beliefs with me; otherwise, it would be difficult for me to consider that person a friend.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q14" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. In choosing my friends, what's most important is that we share certain common interests, enjoy each other's company, and get along well.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;15. If I think something a friend has done is wrong, I will generally:&lt;/br&gt;<br>	&lt;input name="q15" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Tell the other person what I think, since I tend to be very honest and frank, and it might help the person correct his own behavior, even if it means the end of the relationship.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q15" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Decide whether to tell or not depending on what the person has done, how I think the person will react, how valuable continuing the relationship is to me, and other factors.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;16. If a friend going through hard times comes to me for help, I would be likely to:&lt;/br&gt;<br>	&lt;input name="q16" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Give what I can, feeling I want to help, even if I'm not sure the person can pay me back, because I feel a strong sense of altruism or compassion.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q16" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Give what I can to help, but work out an agreement that the person will pay me back, or advise the person on ways he can help himself, because I want to be practical and encourage personal responsibility.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;17. If I was in a dating relationship that was getting serious, and I had some personal information in my background that would put me in a bad light and might damage the relationship, I would:&lt;/br&gt;<br>	&lt;input name="q17" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Tell the person, because he or she should know, and I want a relationship built on honesty and openness, whatever the consequences.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q17" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Not tell the person, because I think this is private information that happened in the past, and I think the relationship should be based on what's happening now and don't want to damage it.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;18. If I was in a serious dating relationship, and family members and friends advised me not to continue seeing this person, because he or she didn't measure up because he or she didn't have a good enough background (ie: from the wrong ethnic group, lower social class, etc.) I would:&lt;/br&gt;<br>	&lt;input name="q18" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Pay attention to their warnings and probably break up with the person, because the attitudes of my family and social group are important to me, and I wouldn't want to lose my relationship with them.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q18" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Listen to my heart and continue the relationship, hoping my friends and family members would finally come around, even if I was risking some of these past relationships.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;&lt;h2&gt;Ethics in Work, Business, and Professional Relationships&lt;/h2&gt;&lt;/br&gt;<br>&lt;/br&gt;19. If I found that the company I was working for or an associate I was dealing with was involved in activities I considered wrong or unethical, I would:&lt;/br&gt;<br>	&lt;input name="q19" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Report that company or person, urge them to change their policies, and/or quit, regardless of the career risks, because I can't condone such actions.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q19" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Continue to work with that company or individual as long as I have to, so I can avoid risking my career, while trying to leave as soon as I can.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;20. Generally, when I am part of an organization or work with one, I tend to:&lt;/br&gt;<br>	&lt;input name="q20" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Go along with the current practices or corporate culture, because I think that's the best way to get along.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q20" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Think of myself more as a leader, idea person, change maker, or rule breaker, because I feel that's the way to make improvements to help everyone.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;21. If I was in a profession that had a formal code of ethics, and I found that others in my local peer group were participating in various practices that were a breach of these ethics, such as sharing confidential information or engaging in informal personal relationships with clients, I would:&lt;/br&gt;<br>	&lt;input name="q21" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Adhere to the formal code of ethics, because I think that's right and in the best interests of clients.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q21" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Do what seems to work best for myself in the current situation to get along with my peers, advance my career, and only share information or engage in personal relationships if I can do so in a beneficial way, since I think the formal code of ethics is overly restrictive.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;22. Generally, I would prefer to work in a company or in a field where:&lt;/br&gt;<br>	&lt;input name="q22" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. I can earn a good income based doing a good job.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q22" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B.  I can contribute to helping others, even if I earn less.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;&lt;h2&gt;Ethics in Local Community and Public Issues&lt;/h2&gt;&lt;/br&gt; <br>&lt;/br&gt;23. If a clerk in a store made a mistake, such as giving me too much money back as change or charging me too little for a purchase, I would:&lt;/br&gt;<br>	&lt;input name="q23" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Keep the extra money or not say anything about being charged too little, since it was the clerk's mistake, and I would consider this like a gift I can use.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q23" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Tell the clerk about the mistake, since I would be concerned the clerk might be charged, and I would feel I was taking advantage of the situation.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;24. If I didn't like someone who was a member of a group I belonged to, I would:&lt;/br&gt;<br>	&lt;input name="q24" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Keep my feelings to myself, and hope that others might feel the same way and do something to get this person out of the group.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q24" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Take the lead in talking to others who might feel the same way and in showing how he or she is hurting the group.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;25. If I saw my neighbors involved in some kind of illegal activity, though it wasn't a threat to me personally or a danger to the neighborhood, I would be likely to:&lt;/br&gt;<br>	&lt;input name="q25" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Look the other way and not complain about it, because I don't want to have trouble with the neighbors and consider it their private business.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q25" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Report them to the authorities, since they were doing something wrong, but I wouldn't use my name to avoid problems with them knowing I complained.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;26. If I was asked to lend my name to an unpopular cause which I believe in, such as by a group putting out literature or advertising about its cause, I would:&lt;/br&gt;<br>	&lt;input name="q26" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Let the group use my name, because I believe in the cause and want to help.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q26" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Not let the group use my name, because I would be concerned if my public support for this cause might damage me, though I might help privately.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;&lt;h2&gt;Ethics in Society as a Whole&lt;/h2&gt;&lt;/br&gt;<br>&lt;/br&gt;27.&lt;/br&gt;<br>	&lt;input name="q27" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. I believe there are some fundamental moral principles that are true for all societies at all times.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q27" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. I believe that moral principles vary from society to society and over history in response to changing times and cultures.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;28.&lt;/br&gt;<br>	&lt;input name="q28" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. I believe that one should do what helps the most people, because it is most important to be of service to others, be unselfish, and contribute to others.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q28" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. While I believe one shouldn't hurt others, one also has consider oneself first, because most other people consider themselves first and can take advantage of you if you aren't careful.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;29.&lt;/br&gt;<br>	&lt;input name="q29" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. I believe one should help low income or disadvantaged people as one can, because this is the ethical or moral thing to do.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q29" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. I believe that low income or disadvantaged people should be helped to find jobs or get training if possible; but each of us is personally responsible for himself or herself.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;30.&lt;/br&gt;<br>	&lt;input name="q30" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. Follow time-tested moral principles.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q30" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. Change our traditional moral principles to adapt to the times.&lt;/label&gt;&lt;/br&gt;<br>&lt;/br&gt;31.&lt;/br&gt;<br>	&lt;input name="q31" type="radio" value="0"/&gt;<br>	&lt;label&gt;<br>		A. We have a deep sense of knowing about what is right and wrong.&lt;/label&gt;&lt;/br&gt;<br>	&lt;input name="q31" type="radio" value="1"/&gt;<br>	&lt;label&gt;<br>		B. We choose the moral principles we do because they are what make the most sense for us as a society; they help to make society work.&lt;/label&gt;&lt;/br&gt;<br><br>&lt;center&gt;<br>Your Name: &lt;input name="name" type="text" /&gt;&lt;/br&gt;&lt;/br&gt;<br>Please check over your answers and make sure you answered all of the questions and typed your name.&lt;P&gt;<br>&lt;input type="submit" value="Submit"&gt;&lt;/input&gt;<br>&lt;/center&gt;<br>&lt;P&gt;&lt;P&gt;<br>&lt;/form&gt;
-</pre>
+	var l_Msg = alertMsg.length;
+	
+	for (var i = 0; i < fieldRequired.length; i++){
+		var obj = formobj.elements[fieldRequired[i]];
+		if (obj){
+			if (obj.type == null){
+				var blnchecked = false;
+				for (var j = 0; j < obj.length; j++){
+					if (obj[j].checked){
+						blnchecked = true;
+					}
+				}
+				if (!blnchecked){
+					alertMsg += " - " + fieldDescription[i] + "\n";
+				}
+				continue;
+			}
 
-</body></html>
+			switch(obj.type){
+			case "select-one":
+				if (obj.selectedIndex == -1 || obj.options[obj.selectedIndex].text == ""){
+					alertMsg += " - " + fieldDescription[i] + "\n";
+				}
+				break;
+			case "select-multiple":
+				if (obj.selectedIndex == -1){
+					alertMsg += " - " + fieldDescription[i] + "\n";
+				}
+				break;
+			case "text":
+			case "textarea":
+				if (obj.value == "" || obj.value == null){
+					alertMsg += " - " + fieldDescription[i] + "\n";
+				}
+				break;
+			default:
+			}
+		}
+	}
+
+	if (alertMsg.length == l_Msg){
+		return true;
+	}else{
+		alert(alertMsg);
+		return false;
+	}
+}
+// -->
+</script>
+<h1>ETHICAL CHOICES MAPPING INSTRUMENT</h1>
+<form name="formcheck" action="results.php" method="POST" onsubmit="return formCheck(this);">
+<p class="MsoNormal"><b>Select one of the following approaches which you are more likely to use:
+</b><h2>Personal Ethics</h2>
+</p>
+1.</br>
+	<input name="q1" type="radio" value="0"/>
+	<label>
+		A. When I have to make a tough decision, I usually figure out what to do by weighing the pros and cons, thinking about the alternatives, and decide based on what makes the most sense.</label></br>
+	<input name="q1" type="radio" value="1"/>
+	<label>
+		B. When I have a major decision to make, I usually know what to do when the time is right, or I have a gut feeling about the best approach to take.</label></br>
+		</input>
+</br>2.</br>
+	<input name="q2" type="radio" value="0"/>
+	<label>
+		A. When I have to make a tough decision, I usually figure out what to do by weighing the pros and cons, thinking about the alternatives, and decide based on what makes the most sense.</label></br>
+	<input name="q2" type="radio" value="1"/>
+	<label>
+		B. When I have a major decision to make, I usually know what to do when the time is right, or I have a gut feeling about the best approach to take.</label></br>
+</br>3.</br>
+	<input name="q3" type="radio" value="0"/>
+	<label>
+		A. I usually prefer to follow the rules or go along with what others are doing in a particular situation.</label></br>
+	<input name="q3" type="radio" value="1"/>
+	<label>
+		B. I tend to follow the rules if it makes sense to do so; but I think it makes sense to break rules or make new ones if the old ones aren't working, and I often do that.</label></br>
+</br>4.</br>
+	<input name="q4" type="radio" value="0"/>
+	<label>
+		A. I tend to put the interests of other people first or do what is in the best interest of the most people.</label></br>
+	<input name="q4" type="radio" value="1"/>
+	<label>
+		B. I tend to think about how something will benefit me first; I prefer to do what's best for me most of the time.</label></br>
+</br>5.</br>
+	<input name="q5" type="radio" value="0"/>
+	<label>
+		A. When I chose the work I'm doing now, I spent some time thinking about I wanted to do, such as my skills, interests, financial considerations, my family's interests, and other factors.</label></br>
+	<input name="q5" type="radio" value="1"/>
+	<label>
+		B. When I chose the work I'm doing now, I felt like this was something I was called to do -- or it just happened, because I drifted into it.</label></br>
+</br>6.</br>
+	<input name="q6" type="radio" value="0"/>
+	<label>
+		A. Keep my agreement even if I had a better job offer during this time.</label></br>
+	<input name="q6" type="radio" value="1"/>
+	<label>
+		B. Take the better job offer if it was better for me to do so.</label></br>
+</br>7.</br>
+	<input name="q7" type="radio" value="0"/>
+	<label>
+		A. Help my family overcome its problems first and then go after the career, move, or relationship I wanted.</label></br>
+	<input name="q7" type="radio" value="1"/>
+	<label>
+		B. Choose to go after the career, move, or relationship I want first, and then help my family.</label></br>
+</br>8.</br>
+	<input name="q8" type="radio" value="0"/>
+	<label>
+		A. When I was growing up, I was generally well-behaved at home or one of the gang with my friends.</label></br>
+	<input name="q8" type="radio" value="1"/>
+	<label>
+		B. When I was growing up, I was often the one who came up with new ideas or was something of a troublemaker or the one to rock the boat.</label></br>
+</br><h2>Familiy Ethics</h2></br>
+</br>9. When one is a child, I think in general:</br>
+	<input name="q9" type="radio" value="0"/>
+	<label>
+		A. One should follow the guidelines and principles provided by one's parents or teachers.</label></br>
+	<input name="q9" type="radio" value="1"/>
+	<label>
+		B. One should regard childhood as a period of self-discovery and learning, and follow the guidelines and principles that seem sensible, but otherwise feel free to make one's own choices.</label></br>
+</br>10. If I was a teenager who got into trouble for committing a petty crime, like joyriding or shoplifting, I would:</br>
+	<input name="q10" type="radio" value="0"/>
+	<label>
+		A. Confess, tell my parents I was sorry, take my punishment, and promise not to do it again.</label></br>
+	<input name="q10" type="radio" value="1"/>
+	<label>
+		B. Do what I can to avoid getting punished by the authorities or my parents, and be more careful in the future.</label></br>
+</br>11. When one is a parent, I think in general:</br>
+	<input name="q11" type="radio" value="0"/>
+	<label>
+		A. One should put the needs of one's kids first in making choices, like where to move or whether to stay together with a mate for the sake of the child.</label></br>
+	<input name="q11" type="radio" value="1"/>
+	<label>
+		B. One should set a good example for the kids and expect them to behave properly.</label></br>
+</br>12. As a parent with a teenager who misbehaves or gets into trouble, I would:</br>
+	<input name="q12" type="radio" value="0"/>
+	<label>
+		A. Talk about the importance of behaving properly or decide on an appropriate punishment if the problem continues or is serious enough.</label></br>
+	<input name="q12" type="radio" value="1"/>
+	<label>
+		B. Try to understand why the teenager is having problems from his or her point of view and show my support to help him or her overcome the problem.</label></br>
+</br>13. As a parent, I think in general:</br>
+	<input name="q13" type="radio" value="0"/>
+	<label>
+		A. There are certain codes of behavior every child should know and follow, such as don't lie, cheat, or steal.</label></br>
+	<input name="q13" type="radio" value="1"/>
+	<label>
+		B. Each child is an individual, and it is important to help the child develop to his fullest potential.</label></br>
+</br><h2>Ethics with Friends, Dates, and Distant Relatives </h2></br>
+</br>14.</br>
+	<input name="q14" type="radio" value="0"/>
+	<label>
+		A. In choosing my friends, it's important that a friend shares certain core values or beliefs with me; otherwise, it would be difficult for me to consider that person a friend.</label></br>
+	<input name="q14" type="radio" value="1"/>
+	<label>
+		B. In choosing my friends, what's most important is that we share certain common interests, enjoy each other's company, and get along well.</label></br>
+</br>15. If I think something a friend has done is wrong, I will generally:</br>
+	<input name="q15" type="radio" value="0"/>
+	<label>
+		A. Tell the other person what I think, since I tend to be very honest and frank, and it might help the person correct his own behavior, even if it means the end of the relationship.</label></br>
+	<input name="q15" type="radio" value="1"/>
+	<label>
+		B. Decide whether to tell or not depending on what the person has done, how I think the person will react, how valuable continuing the relationship is to me, and other factors.</label></br>
+</br>16. If a friend going through hard times comes to me for help, I would be likely to:</br>
+	<input name="q16" type="radio" value="0"/>
+	<label>
+		A. Give what I can, feeling I want to help, even if I'm not sure the person can pay me back, because I feel a strong sense of altruism or compassion.</label></br>
+	<input name="q16" type="radio" value="1"/>
+	<label>
+		B. Give what I can to help, but work out an agreement that the person will pay me back, or advise the person on ways he can help himself, because I want to be practical and encourage personal responsibility.</label></br>
+</br>17. If I was in a dating relationship that was getting serious, and I had some personal information in my background that would put me in a bad light and might damage the relationship, I would:</br>
+	<input name="q17" type="radio" value="0"/>
+	<label>
+		A. Tell the person, because he or she should know, and I want a relationship built on honesty and openness, whatever the consequences.</label></br>
+	<input name="q17" type="radio" value="1"/>
+	<label>
+		B. Not tell the person, because I think this is private information that happened in the past, and I think the relationship should be based on what's happening now and don't want to damage it.</label></br>
+</br>18. If I was in a serious dating relationship, and family members and friends advised me not to continue seeing this person, because he or she didn't measure up because he or she didn't have a good enough background (ie: from the wrong ethnic group, lower social class, etc.) I would:</br>
+	<input name="q18" type="radio" value="0"/>
+	<label>
+		A. Pay attention to their warnings and probably break up with the person, because the attitudes of my family and social group are important to me, and I wouldn't want to lose my relationship with them.</label></br>
+	<input name="q18" type="radio" value="1"/>
+	<label>
+		B. Listen to my heart and continue the relationship, hoping my friends and family members would finally come around, even if I was risking some of these past relationships.</label></br>
+</br><h2>Ethics in Work, Business, and Professional Relationships</h2></br>
+</br>19. If I found that the company I was working for or an associate I was dealing with was involved in activities I considered wrong or unethical, I would:</br>
+	<input name="q19" type="radio" value="0"/>
+	<label>
+		A. Report that company or person, urge them to change their policies, and/or quit, regardless of the career risks, because I can't condone such actions.</label></br>
+	<input name="q19" type="radio" value="1"/>
+	<label>
+		B. Continue to work with that company or individual as long as I have to, so I can avoid risking my career, while trying to leave as soon as I can.</label></br>
+</br>20. Generally, when I am part of an organization or work with one, I tend to:</br>
+	<input name="q20" type="radio" value="0"/>
+	<label>
+		A. Go along with the current practices or corporate culture, because I think that's the best way to get along.</label></br>
+	<input name="q20" type="radio" value="1"/>
+	<label>
+		B. Think of myself more as a leader, idea person, change maker, or rule breaker, because I feel that's the way to make improvements to help everyone.</label></br>
+</br>21. If I was in a profession that had a formal code of ethics, and I found that others in my local peer group were participating in various practices that were a breach of these ethics, such as sharing confidential information or engaging in informal personal relationships with clients, I would:</br>
+	<input name="q21" type="radio" value="0"/>
+	<label>
+		A. Adhere to the formal code of ethics, because I think that's right and in the best interests of clients.</label></br>
+	<input name="q21" type="radio" value="1"/>
+	<label>
+		B. Do what seems to work best for myself in the current situation to get along with my peers, advance my career, and only share information or engage in personal relationships if I can do so in a beneficial way, since I think the formal code of ethics is overly restrictive.</label></br>
+</br>22. Generally, I would prefer to work in a company or in a field where:</br>
+	<input name="q22" type="radio" value="0"/>
+	<label>
+		A. I can earn a good income based doing a good job.</label></br>
+	<input name="q22" type="radio" value="1"/>
+	<label>
+		B.  I can contribute to helping others, even if I earn less.</label></br>
+</br><h2>Ethics in Local Community and Public Issues</h2></br> 
+</br>23. If a clerk in a store made a mistake, such as giving me too much money back as change or charging me too little for a purchase, I would:</br>
+	<input name="q23" type="radio" value="0"/>
+	<label>
+		A. Keep the extra money or not say anything about being charged too little, since it was the clerk's mistake, and I would consider this like a gift I can use.</label></br>
+	<input name="q23" type="radio" value="1"/>
+	<label>
+		B. Tell the clerk about the mistake, since I would be concerned the clerk might be charged, and I would feel I was taking advantage of the situation.</label></br>
+</br>24. If I didn't like someone who was a member of a group I belonged to, I would:</br>
+	<input name="q24" type="radio" value="0"/>
+	<label>
+		A. Keep my feelings to myself, and hope that others might feel the same way and do something to get this person out of the group.</label></br>
+	<input name="q24" type="radio" value="1"/>
+	<label>
+		B. Take the lead in talking to others who might feel the same way and in showing how he or she is hurting the group.</label></br>
+</br>25. If I saw my neighbors involved in some kind of illegal activity, though it wasn't a threat to me personally or a danger to the neighborhood, I would be likely to:</br>
+	<input name="q25" type="radio" value="0"/>
+	<label>
+		A. Look the other way and not complain about it, because I don't want to have trouble with the neighbors and consider it their private business.</label></br>
+	<input name="q25" type="radio" value="1"/>
+	<label>
+		B. Report them to the authorities, since they were doing something wrong, but I wouldn't use my name to avoid problems with them knowing I complained.</label></br>
+</br>26. If I was asked to lend my name to an unpopular cause which I believe in, such as by a group putting out literature or advertising about its cause, I would:</br>
+	<input name="q26" type="radio" value="0"/>
+	<label>
+		A. Let the group use my name, because I believe in the cause and want to help.</label></br>
+	<input name="q26" type="radio" value="1"/>
+	<label>
+		B. Not let the group use my name, because I would be concerned if my public support for this cause might damage me, though I might help privately.</label></br>
+</br><h2>Ethics in Society as a Whole</h2></br>
+</br>27.</br>
+	<input name="q27" type="radio" value="0"/>
+	<label>
+		A. I believe there are some fundamental moral principles that are true for all societies at all times.</label></br>
+	<input name="q27" type="radio" value="1"/>
+	<label>
+		B. I believe that moral principles vary from society to society and over history in response to changing times and cultures.</label></br>
+</br>28.</br>
+	<input name="q28" type="radio" value="0"/>
+	<label>
+		A. I believe that one should do what helps the most people, because it is most important to be of service to others, be unselfish, and contribute to others.</label></br>
+	<input name="q28" type="radio" value="1"/>
+	<label>
+		B. While I believe one shouldn't hurt others, one also has consider oneself first, because most other people consider themselves first and can take advantage of you if you aren't careful.</label></br>
+</br>29.</br>
+	<input name="q29" type="radio" value="0"/>
+	<label>
+		A. I believe one should help low income or disadvantaged people as one can, because this is the ethical or moral thing to do.</label></br>
+	<input name="q29" type="radio" value="1"/>
+	<label>
+		B. I believe that low income or disadvantaged people should be helped to find jobs or get training if possible; but each of us is personally responsible for himself or herself.</label></br>
+</br>30.</br>
+	<input name="q30" type="radio" value="0"/>
+	<label>
+		A. Follow time-tested moral principles.</label></br>
+	<input name="q30" type="radio" value="1"/>
+	<label>
+		B. Change our traditional moral principles to adapt to the times.</label></br>
+</br>31.</br>
+	<input name="q31" type="radio" value="0"/>
+	<label>
+		A. We have a deep sense of knowing about what is right and wrong.</label></br>
+	<input name="q31" type="radio" value="1"/>
+	<label>
+		B. We choose the moral principles we do because they are what make the most sense for us as a society; they help to make society work.</label></br>
+
+<center>
+Your Name: <input name="name" type="text" /></br></br>
+Please check over your answers and make sure you answered all of the questions and typed your name.<P>
+<input type="submit" value="Submit"></input>
+</center>
+<P><P>
+</form>
+
+</body>
+
+</html>
